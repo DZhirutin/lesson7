@@ -1,0 +1,1 @@
+FROM davidcaste/alpine-tomcat:jre7tomcat8
