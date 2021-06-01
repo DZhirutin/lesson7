@@ -5,7 +5,7 @@ services:
     volumes: 
       - source-data:/tmp/boxfuse-sample-java-war-hello/target/
   prod:
-    image: tomcat:9.0.46-jdk8-corretto
+    image: willemjenniskens/alpinetomcat:v1
     ports:
       - 8888:8080
     volumes: 
