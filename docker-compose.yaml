@@ -1,15 +1,6 @@
 version: '3'
 services:
-  buildapp:
-    build: buildapp
-    volumes: 
-      - source-data:/tmp/boxfuse-sample-java-war-hello/target/
-  prod:
-    image: willemjenniskens/alpinetomcat:v1
+  multistage:
+    build: .
     ports:
       - 8888:8080
-    volumes: 
-      - source-data:/usr/local/tomcat/webapps/
-volumes:
-  source-data:
-    driver: local
